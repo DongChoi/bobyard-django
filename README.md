@@ -56,10 +56,14 @@ source venv/bin/activate
 
 ### Database Setup
 
+```
 (venv) python manage.py makemigrations
 (venv) python manage.py migrate
+(venv) python manage.py shell < load_comments_and_users.py
 
+```
 
 ### Running the Server
+```
 (venv) python manage.py runserver
-
+```
